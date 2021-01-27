@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Title: sampleaddapp
+Implementation-Version: ${APP_VERSION}.${BUILD_NUMBER}
+Build-Jdk-Spec: 1.8
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+Main-Class: com.tmobile.eus.digitalservices.sampleadd.SampleAddAppl
+
