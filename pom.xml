@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.tmobile.rsp</groupId>
+	<groupId>com.sampleaddapp</groupId>
 	<artifactId>sampleaddapp</artifactId>
-	<version>${APP_VERSION}.${BUILD_NUMBER}</version> 
+	<version>0.0.1-SNAPSHOT</version> 
 	<packaging>jar</packaging>
 	<name>sampleaddapp</name>
 
@@ -17,8 +17,8 @@
 	</parent>
 
 	<properties>
-	        <groupId>com.tmobile.eus.digitalservices</groupId>
-	        <artifactId>sampleadd</artifactId>
+	        <groupId>com.sampleadd</groupId>
+	        <artifactId>sampleaddapp</artifactId>
 	        <version>0.0.1-SNAPSHOT</version>
 	        <name>sampleaddapp</name>
 	        <description>sampleadd project for Spring Boot</description>
@@ -29,7 +29,7 @@
          <spring-cloud-services.version>2.1.4.RELEASE</spring-cloud-services.version>
 		<cxf.version>3.1.4</cxf.version>
 		<springfox.version>2.9.2</springfox.version> 
-		<start-class>com.tmobile.eus.digitalservices.sampleadd.SampleAddAppl</start-class>
+		<start-class>com.sampleadd.SampleAddAppl</start-class>
 	</properties>
 
 	<dependencies>
