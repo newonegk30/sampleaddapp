@@ -24,17 +24,20 @@ import com.sampleadd.model.SampleAddResponse;
 @RestController
 public class SampleAddController {
 
+	
         private double dnum = 0.0;
         private double tnum = 0.0;
-	
-	@RequestMapping(method = RequestMethod.POST , path="/{num1}/{num2}" , produces = "application/json")
+	//@RequestMapping(method = RequestMethod.POST , path="/{num1}/{num2}" , produces = "application/json")
+	@RequestMapping(path="/{num1}/{num2}" , produces = "application/json")
 
 	public SampleAddResponse sampleAddArthmetic(@PathVariable(required = false) String num1, @PathVariable(required = false) String num2) {
 		
-		SampleAddResponse sampleAddResp = new SampleAddResponse();
-		Gson g = new Gson();
+	
+	SampleAddResponse sampleAddResp = new SampleAddResponse();
+
+	Gson g = new Gson();
 		if (num1 == null || num1.trim().length() == 0 ) {
-                     tnum = dnum ; 
+                     dnum = 0.0; 
                  }
 		else {
 			try {
@@ -49,7 +52,7 @@ public class SampleAddController {
                  }
 
 		if (num2 == null || num2.trim().length() == 0 ) {
-                        tnum = dnum + 10.0 ;
+                        tnum = tnum + 10.0 ;
                 }
                 else  {
 			try {

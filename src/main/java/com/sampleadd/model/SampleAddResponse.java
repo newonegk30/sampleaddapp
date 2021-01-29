@@ -27,16 +27,11 @@ public class SampleAddResponse   {
   }
 
 
-  @Override
-  public int hashCode() {
-    return Objects.hash(total);
-  }
-
   public String outResp() {
     StringBuilder sb = new StringBuilder();
     sb.append("{\n");
     
-    sb.append("    Sum: ").append(toIndentedString(total)).append("\n");
+    sb.append("    Sum: ").append(Double.toString(total)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -44,12 +39,12 @@ public class SampleAddResponse   {
   /**
    * Convert the given object to string with each line indented by 4 spaces
    * (except the first line).
-   */
   private String toIndentedString(Object o) {
     if (o == null) {
       return "0.0";
     }
     return o.toString();
   }
+   */
 }
 
